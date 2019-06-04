@@ -1,13 +1,13 @@
 {
   "name": "simple-process-monitor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "simple process monitor tool for command line interface.",
-  "main": "spm.js",
+  "main": "main.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "start": "node spm.js",
+    "start": "node src/main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/yurseria/simple-process-monitor#readme",
   "dependencies": {
+    "dayjs": "^1.8.14",
     "lodash": "^4.17.11",
     "minimist": "^1.2.0",
     "pidusage": "^2.0.17",

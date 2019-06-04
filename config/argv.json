@@ -1,0 +1,10 @@
+{  
+    "alias": {
+        "h": ["help", "?"],
+        "v": "version",
+        "t": "time",
+        "i": "interval",
+        "o": "output",
+        "p": "process"
+    }
+}
