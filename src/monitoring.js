@@ -9,8 +9,9 @@ module.exports.start = ({arrProcessId, maxCount = config.maxCount, interval = co
   console.log("Start monitoring...");
   console.log(`Estimated time : ${maxCount * interval}s`);
 
+  if (isOutput) report.check();
+
   return setInterval(function () {
-    process.stdout.write(".");
     pidusage(arrProcessId, function (err, stats) {
       if (count > maxCount) {
         console.log("Monitoring done!");
@@ -18,7 +19,7 @@ module.exports.start = ({arrProcessId, maxCount = config.maxCount, interval = co
       }
       
       if (isOutput) {
-        report.check();
+        process.stdout.write(".");
         report.reportToFile(stats);
       } else {
         report.reportToConsole(stats);
