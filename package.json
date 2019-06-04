@@ -1,0 +1,33 @@
+{
+  "name": "simple-process-monitor",
+  "version": "0.0.1",
+  "description": "simple process monitor tool for command line interface.",
+  "main": "spm.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node spm.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yurseria/simple-process-monitor.git"
+  },
+  "keywords": [
+    "process",
+    "monitor"
+  ],
+  "author": "yurseria",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yurseria/simple-process-monitor/issues"
+  },
+  "homepage": "https://github.com/yurseria/simple-process-monitor#readme",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "minimist": "^1.2.0",
+    "pidusage": "^2.0.17",
+    "pretty-bytes": "^5.2.0"
+  }
+}
