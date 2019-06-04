@@ -1,32 +1,32 @@
 {
-  "name": "simple-process-monitor",
+  "name": "simpmonit",
   "version": "0.0.2",
   "description": "simple process monitor tool for command line interface.",
-  "bin": "bin/spm.js",
-  "directories": {
-    "test": "test"
-  },
+  "bin": "bin/simpmonit.js",
   "scripts": {
-    "start": "node bin/spm.js",
+    "start": "node bin/simpmonit.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yurseria/simple-process-monitor.git"
+    "url": "git+https://github.com/yurseria/simpmonit.git"
   },
   "keywords": [
+    "utility",
+    "cli",
     "process",
-    "monitor"
+    "monitor",
+    "monitoring"
   ],
   "author": "yurseria <yurseria@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yurseria/simple-process-monitor/issues"
+    "url": "https://github.com/yurseria/simpmonit/issues"
   },
   "engines": {
     "node": ">=6.4.0"
   },
-  "homepage": "https://github.com/yurseria/simple-process-monitor#readme",
+  "homepage": "https://github.com/yurseria/simpmonit#readme",
   "dependencies": {
     "dayjs": "^1.8.14",
     "lodash": "^4.17.11",
