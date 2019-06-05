@@ -12,10 +12,11 @@ module.exports.start = ({arrProcessId, maxCount = config.maxCount, interval = co
 
   if (isOutput) report.check();
 
-  return setInterval(function () {
-    pidusage(arrProcessId, function (err, stats) {
+  return setInterval(() => {
+    pidusage(arrProcessId, (err, stats) => {
       if (count > maxCount) {
-        console.log("Monitoring done!");
+        console.log("\nMonitoring done!");
+        if (isOutput) console.log("Results are stored in the 'simpmonit-reports' directory.")
         process.exit(0);
       }
       
