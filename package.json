@@ -1,6 +1,6 @@
 {
   "name": "simpmonit",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "simple process monitor tool for command line interface.",
   "bin": "bin/simpmonit.js",
   "scripts": {
@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/yurseria/simpmonit#readme",
   "dependencies": {
+    "comma-number": "^2.0.1",
     "dayjs": "^1.8.14",
     "lodash": "^4.17.11",
     "minimist": "^1.2.0",

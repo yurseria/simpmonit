@@ -1,13 +1,14 @@
 const pidusage = require('pidusage');
 const report = require('./report');
 const config = require('../config/default');
+const commaNumber = require('comma-number');
 
 let count = 1;
 
 module.exports.start = ({arrProcessId, maxCount = config.maxCount, interval = config.interval, isOutput}) => {
 
   console.log("Start monitoring...");
-  console.log(`Estimated time : ${maxCount * interval}s`);
+  console.log(`Estimated time : ${commaNumber(maxCount * interval)}ms`);
 
   if (isOutput) report.check();
 
